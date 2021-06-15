@@ -13,13 +13,109 @@ h1{
 /*	padding-top: 200px;
 */	text-shadow: 3px 3px 6px darkblue;
 	margin-bottom: 15px;
-	margin-top: 0;
+	margin-top: 10;
 }
 
 p{
 	font-size: 25px;
 	/*opacity: 0.7;*/
+	margin-left: 40px;
+	margin-right: 40px;
 
+}
+
+.section{
+	min-height: 100vh;
+	/*background-color: lightpink;*/
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.first-section{
+	background-image: url(images/example2.webp);
+	background-size: cover
+}
+
+.second-section{
+	/*background: linear-gradient(135deg,#FF686B, #8DA1B9 75%);*/
+	background: radial-gradient(#FF686B, #8DA1B9 75%);
+}
+
+.third-section{
+	background-image: url(images/teach2.png);
+	background-size: cover;
+	background-position: bottom;
+}
+/*
+.scroll{
+	justify-content: center;
+  align-items: center;
+	align-self: self-end;
+}
+*/
+.section-postion{
+	justify-content: space-around;
+}
+
+/*.sub-section{
+	justify-self: center;
+}*/
+
+
+/*
+.scroll-button a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+*/
+
+.scroll-button{
+	font-size: 50px;
+	color: white;
+	margin-top: 50px;
+	/*-webkit-transition: all .5s ease-in 3s;
+  transition: all .5s ease-in 3s;*/
+  scroll-behavior: smooth;
+}
+
+.scroll-button:hover{
+	color: rgba(255, 255,255,0.7);
+}
+
+.scroll-button a{
+	padding-top: 60px;
+	transition: opacity .5s;
+}
+
+.scroll-text{
+	font-size: 20px;
+/*	color: hotpink;
+	width: 100%;*/
+	margin-top: 0px;	
+}
+
+/*.scroll{
+	align-self: flex-end;
+}*/
+
+.list-template{
+	list-style: none;
+	padding: 0;
+}
+
+.list-template li{
+	display: inline;
 }
 
 .current-activity{
@@ -53,50 +149,6 @@ p{
 	border: dashed darkblue;
 }
 
-.scroll-text{
-	font-size: 20px;
-/*	color: hotpink;
-	width: 100%;*/
-	margin-top: 0px;	
-}
-
-/*.scroll-button a{
-	padding-top: 60px;
-}
-
-.scroll-button a span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 24px;
-  height: 24px;
-  margin-left: -12px;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  box-sizing: border-box;
-}
-*/
-.scroll-button{
-	font-size: 50px;
-	color: white;
-	margin-top: 50px;
-}
-
-.scroll-button:hover{
-	color: rgba(255, 255,255,0.7);
-}
-
-.list-template{
-	list-style: none;
-	padding: 0;
-}
-
-.list-template li{
-	display: inline;
-}
-
 .programming a{
 	color: warm;
 	text-decoration: none;
@@ -106,6 +158,10 @@ p{
 
 .programming li{
 	font-size: 50px;
+}
+
+.programming a:hover{
+	opacity: 0.8;
 }
 
 .programming-text{
@@ -122,15 +178,35 @@ p{
 }
 
 .inline-block-block1{
-	flex: 1;
+	display: flex;
+	align-items: center;
+	align-self: center;
+	/*flex: 1;*/
 }
 
 .block1-backbox{
 	align-items: right;
-	background-color: white;
-	padding: 0 10px;
+	background-color: rgba(130, 130, 130, 0.3);
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	padding: 10px 8px;
+	align-items: center;
+	/*opacity: 0.5;*/
 	/*border: inline*/
+	margin-left: 40px;
 }
+
+.networks a{
+	color: white;
+	text-descoration: none;
+	padding: 10px;
+	font-size: 30px;
+/*	animation: opacity;*/
+}
+
+.networks a:hover{
+	opacity: 0.7;
+}
+
 .img-block{
 	border-radius: 50%;
 	width: 50%;
@@ -148,7 +224,7 @@ p{
 
 .help a{
 	color: white;
-	text-decoration: none;
+	/*text-decoration: none;*/
 }
 
 .help a:hover{
@@ -160,47 +236,5 @@ p{
 	text-shadow: 1px 1px 0.5px grey;
 }
 
-.networks a{
-	color: white;
-	text-decoration: none;
-	padding: 10px;
-	font-size: 30px;
-/*	animation: opacity;*/
-}
 
-.networks a:hover{
-	opacity: 0.8;
-}
 
-.section{
-	min-height: 100vh;
-	/*background-color: lightpink;*/
-	display: flex;
-  	justify-content: center;
-  	align-items: center;
-  	flex-direction: column;
-}
-
-.first-section{
-	background-image: url(images/example2.webp);
-	background-size: cover
-}
-
-.second-section{
-	/*background: linear-gradient(135deg,#FF686B, #8DA1B9 75%);*/
-	background: radial-gradient(#FF686B, #8DA1B9 75%);
-}
-
-.third-section{
-	background-image: url(images/teach2.png);
-	background-size: cover;
-	background-position: bottom;
-}
-
-.section-postion{
-	justify-content: space-around;
-}
-
-/*.sub-section{
-	justify-self: center;
-}*/
