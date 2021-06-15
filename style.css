@@ -10,8 +10,8 @@ body{
 h1{
 	font-size: 60px;
 	/*padding: 300px 0 0 0;*/
-/*	padding-top: 200px;
-*/	text-shadow: 3px 3px 6px darkblue;
+	/*padding-top: 200px;*/	
+	text-shadow: 3px 3px 6px darkblue;
 	margin-bottom: 15px;
 	margin-top: 10;
 }
@@ -94,7 +94,7 @@ p{
 }
 
 .scroll-button a{
-	padding-top: 60px;
+	/*margin-top: 100px;*/
 	transition: opacity .5s;
 }
 
@@ -105,9 +105,10 @@ p{
 	margin-top: 0px;	
 }
 
-/*.scroll{
-	align-self: flex-end;
-}*/
+.scroll{
+	/*align-self: flex-end;*/
+	margin-top: 70px;
+}
 
 .list-template{
 	list-style: none;
